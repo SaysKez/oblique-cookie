@@ -11,10 +11,12 @@ body {
 	-webkit-text-stroke-width: 0.5px;
 	text-stroke-width: 0.5px;
 	color: #fff;
+	font-size: 3em;
 	}
 
 	h2 {
-    font-family: 'East Sea Dokdo', cursive;
+	font-family: 'East Sea Dokdo', cursive;
+	font-size: 2em;
 	color: #D80E0E;
 	}
 
@@ -22,6 +24,7 @@ body {
 		display: block;
 		margin: auto;
 		text-align: center;
+		width: 80%;
 	}
 
 
