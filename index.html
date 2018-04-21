@@ -7,185 +7,12 @@
 
   <meta name="description" content="Fortuitous Oblique Strategies generator" />
   <meta name="keywords" content="'Oblique Strategies', 'fortune cookie', 'random generator', prompt, design" />
+  
   <title>Oblique Cookie</title>
-<style>
 
-	/* Basic body styling. */
-
-	body {
-	/*letter-spacing: 0.05em;*/
-    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-	}
-
-	h1 {
-    font-family: 'Black Han Sans', sans-serif;
-	-webkit-text-stroke-color: #D80E0E;
-	text-stroke-color: #D80E0E;
-	-webkit-text-stroke-width: 0.5px;
-	text-stroke-width: 0.5px;
-	color: #fff;
-	}
-
-	h2 {
-    font-family: 'East Sea Dokdo', cursive;
-	color: #D80E0E;
-	}
-
-	h1, h2 {
-		display: block;
-		margin: auto;
-		text-align: center;
-	}
-
-
-	/* Button */
-
-	button {
-	display: block;
-	margin: auto;
-	border: 3px solid #D80E0E;
-	background-color: #D80E0E;
-	color: #fff;
-	padding: 0.35em 1.2em;
-	font-size: 1em;
-	cursor: pointer;
-	outline: none;
-	position: relative;
-	overflow: hidden;
-
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-button:after {
-	content: '';
-	position: absolute;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-
-	width: 100%;
-	height: 0;
-	top: 50%;
-	left: 50%;
-	background: #fff;
-	opacity: 0;
-	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-	transform: translateX(-50%) translateY(-50%) rotate(45deg);
-}
-
-button:hover,
-button:active {
-	color: #000;
-}
-
-button:hover:after, button:active:after {
-	height: 500%;
-	opacity: 1;
-}
-
-.button-text {
-	position: relative;
-	z-index: 100;
-}
-
-	#cookie-big {
-		width: 100%;
-		height: 95vh;
-		margin: auto;
-		position: relative;
-	}
-
-	.button-wrapper {
-		position: absolute;
-		width: 100%;
-		left:0;
-		bottom: 9.5em;
-		z-index: 100;
-	}
-
-
-
-#cookie-small {
-	display: none;
-}
-
-/* RESPONSIVE */
-@media (max-width: 50em) {
-	#cookie-big {
-		display: none;
-	}
-
-	.button-wrapper {
-		display: none;
-	}
-
-	#cookie-small {
-		display: block;
-	}
-
-	#cookie-small svg {
-		margin: 3em auto 0em auto;
-		width: 100%;
-		height: 80%;
-	}
-
-	p {
-		display: block;
-		color: #000;
-		margin: 1em auto;
-		width: 80%;
-		line-height: 1.5em;
-		padding: 1em;
-		text-align: center;
-		border: 1px solid #D80E0E;
-	}
-
-}
-
-
-
-	/* The CSS for the fade in. */ 
-
-	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-
-	.fade-in {
-	position: fixed !important;
-	position: absolute;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	display: flex;
-	display: -webkit-flex;
-	justify-content: center;
-	align-items: center;
-
-	opacity:0;  /* Make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  /* Call the keyframe named fadeIn, use animattion ease-in and repeat it only 1 time. */
-	-moz-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
-
-	-webkit-animation-fill-mode:forwards;  /* This makes sure that after animation is done we remain at the last keyframe value (opacity: 1). */
-	-moz-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	animation-duration:1s;
-	}
-
-
-</style>
-
-
-	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|East+Sea+Dokdo|Open+Sans" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|East+Sea+Dokdo|Open+Sans" rel="stylesheet">
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 </head>
 
 <body onload="printStrategy()">
@@ -334,7 +161,7 @@ button:hover:after, button:active:after {
 					</g>
 				  </g>
 				  <g stroke="#D80E0E" transform="rotate(15 -203.73 1768.805)">
-					<path fill="#FFF" stroke-width="2" d="M28.0334067,0.0590743756 C51.0748132,19.5073977 70.676613,42.284275 83.2207031,64.1445681 C85.6067112,68.3026087 45.6794165,69.1375175 14.1369099,67.6307268 L4.9140625,55.4003906 L19.2597656,45.265625 L0,21.9941406 L28.3457031,1.31054687 L28.0334067,0.0590743756 Z"/>
+					<path fill="#FFF" stroke-width="1.5" d="M28.0334067,0.0590743756 C51.0748132,19.5073977 70.676613,42.284275 83.2207031,64.1445681 C85.6067112,68.3026087 45.6794165,69.1375175 14.1369099,67.6307268 L4.9140625,55.4003906 L19.2597656,45.265625 L0,21.9941406 L28.3457031,1.31054687 L28.0334067,0.0590743756 Z"/>
 					<g transform="translate(14 54)">
 					  <path d="M1 0L1 13.7385395M17 9L17 13.7348633"/>
 					</g>
